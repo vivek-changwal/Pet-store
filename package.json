@@ -1,0 +1,57 @@
+{
+  "name": "pet-store",
+  "version": "1.0.0",
+  "description": "",
+  "proxy":"http://localhost:5000",
+  "main": "index.js",
+  "scripts": {
+    "prod:start": "npx sequelize-cli db:create || npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all  && nodemon server.js dotenv -e .env.production",
+    "dev:start": "nodemon server.js dotenv -e .env.development",
+    "test:start": "npx sequelize-cli db:create || npx sequelize-cli db:migrate && npx sequelize-cli && nodemon server.js dotenv -e .env.test",
+    "dev:db:create": "npx sequelize-cli db:create --env development",
+    "prod:db:create": "npx sequelize-cli db:create --env production",
+    "test:db:create": "npx sequelize-cli db:create --env test",
+    "lint": "eslint .",
+    "dev:db:migrate": "npx sequelize-cli db:migrate --env development",
+    "prod:db:migrate": "npx sequelize-cli db:migrate --env production",
+    "test:db:migrate:": "npx sequelize-cli db:migrate --env test",
+    "dev:db:seed": "npx sequelize-cli db:seed:all --env development",
+    "prod:db:seed": "npx sequelize-cli db:seed:all --env production",
+    "test:db:seed": "npx sequelize-cli db:seed:all --env test",
+    "dev:db:drop": "npx sequelize-cli db:drop --env development ",
+    "prod:db:drop": "npx sequelize-cli db:drop --env production ",
+    "test:db:drop": "npx sequelize-cli db:drop --env test "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alvrio-Labs/pet-store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alvrio-Labs/pet-store/issues"
+  },
+  "homepage": "https://github.com/Alvrio-Labs/pet-store#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.9.1",
+    "jsonwebtoken": "^9.0.0",
+    "nodemailer": "^6.9.1",
+    "pg": "^8.10.0",
+    "pg-hstore": "^2.3.4",
+    "postgres": "^3.3.4",
+    "razorpay": "^2.8.6",
+    "sequelize": "^6.29.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.22",
+    "sequelize-cli": "^6.6.0"
+  }
+}

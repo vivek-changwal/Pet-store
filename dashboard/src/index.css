@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  background-color:#2d4d8d ;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #7A7F9D;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #21295C;
+}
+/* Handle on Hover */
+::-webkit-scrollbar-track:hover {
+  background: #21295C;
+}
+
+.css-1ptyyyq-MuiFormLabel-root-MuiInputLabel-root {
+  color: black !important;
+}
+
+.css-8fxrho-MuiButtonBase-root-MuiButton-root {
+  width: 30% !important;
+  margin: 11px -2px 0 -6px !important;
+  padding: 12px 17px !important;
+  border-radius: 22px !important;
+  line-height: 1.75 !important;
+  position: relative!important;
+  left: 4px!important;
+}
+.css-8fxrho-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: rgb(20, 15, 116) !important;
+}
+.css-1qxadfk-MuiPaper-root-MuiDialog-paper {
+    max-width: 1025px!important;
+}
+.css-1osj8n2-MuiGrid-root {
+    max-width: 44%!important;
+    position: relative!important;
+    left: 64px!important;
+    border-radius: 60px;
+}
+.css-hlj6pa-MuiDialogActions-root {
+  position: relative !important;
+  right: 39px!important;
+}
+.login-button {
+    position: relative !important;
+    width: 102% !important;
+    right: 4px !important;
+    height: 40.7px !important;
+    background-color: #080101 !important;
+}

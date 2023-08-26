@@ -1,0 +1,53 @@
+user :
+  password: 
+    errorMessage: password must contain number,upper char , lower char , special char
+    regex: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$
+    min: 8
+  mobile:
+    errorMessage: Invalid mobile number
+    min: 1000000000
+    max: 9999999999
+  gender:
+    type: ["Male", "Female", "Others"]
+    errorMessage: Select a gender
+  firstName:
+    max: 50
+    min: 2
+  lastName:
+    max: 50
+    min: 2
+
+auth:
+  forgotPassword:
+    successMessage: The email has been sent 
+  resetPassword:
+    errorMessage: Incorrect or expired
+    successMessage: Your Password has been updated
+
+api_messages:
+  response:
+    success:
+      message: 'created successfully.'
+    fail:
+      message: 'Unable to create {{title}}.'
+    updateFail:
+      message: 'Unable to update {{title}}.'
+    delete:
+      message: 'deleted successfully {{title}}.'
+    notFound:
+      message: "No user found of this id"
+    invalid:
+      message: '{{title}} is invalid'
+    updateSuccess:
+      message: 'Updated Successfully'
+
+  validation:
+    notEmpty: 'cannot be empty.'
+    isString: '{{field}} must be a string.'
+    isEmail: 'Please enter a valid email address.'
+    isInEnum: 'Invalid value for {{field}}.'
+    isNumeric: '{{field}} must be numeric value.'
+    userAlreadyExists: 'User already exists with given email, first name and last name'
+    isExists: '{{field}} does not exist.'
+    isMandatory: '{{field}} is a mandatory field'
+    isAnArray: '{{field}} should be an array.'

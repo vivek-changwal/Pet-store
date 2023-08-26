@@ -1,0 +1,32 @@
+{
+  "test": {
+    "username": "postgres",
+    "password": "root",
+    "database": "pet_store_test",
+    "host": "localhost",
+    "dialect": "postgres",
+    "define": {
+      "timestamp": true
+    }
+  },
+  "development": {
+    "username": "postgres",
+    "password": "root",
+    "database": "pet_store_development",
+    "host": "localhost",
+    "dialect": "postgres",
+    "define": {
+      "timestamp": true
+    }
+  },
+  "production": {
+    "username": "postgres",
+    "password": "root",
+    "database": "pet_store_production",
+    "host": "localhost",
+    "dialect": "postgres",
+    "define": {
+      "timestamp": true
+    }
+  }
+}
