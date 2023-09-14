@@ -5,6 +5,7 @@ import AuthService from "./authService";
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
+
 const LoginPage = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
